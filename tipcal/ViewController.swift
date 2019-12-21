@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         let tipSample = [0.15, 0.2, 0.25]
         if(tipControl.selectedSegmentIndex != -1){
         tipPercentage = tipSample[tipControl.selectedSegmentIndex]
-        tipPercentageField.text = String(format: "%d", tipPercentage * 100)
+        tipPercentageField.text = "\(tipPercentage * 100)"
         }
         
         let tip = bill * tipPercentage
